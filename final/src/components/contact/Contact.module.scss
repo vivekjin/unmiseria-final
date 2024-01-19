@@ -1,0 +1,74 @@
+@import "../../styles/contants.scss";
+
+.wrapper{
+    background: white;
+    overflow: hidden;
+    .container{
+        flex-direction: column;
+        gap: 2rem;
+        .heading{
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap; 
+            // >:nth-child(2)
+            // {
+            //     text-decoration: underline;
+            //     color: orange;
+            //     cursor: pointer;
+            // }
+        }
+        
+        .showCase{
+            width: 100%;
+            gap: 1.5rem;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+            .contactText{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 0.1rem;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-weight: 500;
+
+                .buttonContact{
+    
+                        text-decoration: none;
+                        color: #3498db;
+                        background-color: white;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: large;
+                        font-weight: bold;
+                        border: #3498db 2px solid;
+                        border-radius: 40%;
+                        box-shadow: 0px 21px 13px rgba(0, 0, 0, 10%);
+                        cursor: pointer;
+                        padding: 10px 20px;
+                        margin-top: 20px;
+                        &:hover{
+                            background-color: #3498db;
+                            color: white;;
+                        }
+                    
+                }
+            }
+            
+            >img{
+
+                @media (max-width: $sm) {
+                    width: 100%;
+                }
+                border-radius: 20px;
+                max-width: 25rem;
+                max-height: 18rem;
+                box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
+                cursor: pointer;
+            }
+            
+        } 
+    }  
+} 
